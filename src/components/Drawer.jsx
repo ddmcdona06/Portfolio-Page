@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
@@ -7,8 +8,9 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
+import EngineeringIcon from '@mui/icons-material/Engineering';
+import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
+import ConstructionIcon from '@mui/icons-material/Construction';
 
 export default function PortDrawer() {
   const [state, setState] = React.useState({
@@ -34,16 +36,30 @@ export default function PortDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {['My Story', 'Projects', 'Contact Me'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
+          <ListItem disablePadding sx={{color: 'black'}} components={Link} href='/MyStory'>
+            <ListItemButton href='/MyStory' >
               <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                <EngineeringIcon sx={{color: 'black'}} />
               </ListItemIcon>
-              <ListItemText primary={text} />
+              <ListItemText primary='My Story' />
             </ListItemButton>
           </ListItem>
-        ))}
+          <ListItem disablePadding sx={{color: 'black'}} >
+            <ListItemButton>
+              <ListItemIcon>
+                <ConstructionIcon sx={{color: 'black'}} />
+              </ListItemIcon>
+              <ListItemText primary='Projects' />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding sx={{color: 'black'}} >
+            <ListItemButton>
+              <ListItemIcon>
+                <ConnectWithoutContactIcon sx={{color: 'black'}} />
+              </ListItemIcon>
+              <ListItemText primary='Contact' />
+            </ListItemButton>
+          </ListItem>
       </List>
     </Box>
   );
