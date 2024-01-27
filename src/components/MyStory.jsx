@@ -15,7 +15,7 @@ import Stack from '@mui/material/Stack';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import linked from '../img/linkedin_black_logo.png'
 import git from '../img/github.png'
-
+import med from '../img/medium.png'
 
 
 function MyStory() {
@@ -39,6 +39,10 @@ function MyStory() {
             <IconButton href="https://github.com/ddmcdona06" target="_blank" >
               <img src={git} alt=''width='40px' height='auto' id="linked"/>
               <Typography margin={1} sx={{color: '#fec934'}} fontFamily={'monospace'} >GitHub</Typography>
+            </IconButton>
+            <IconButton href="https://medium.com/@darryldmcdonald" target="_blank" >
+              <img src={med} alt=''width='40px' height='auto' id="linked"/>
+              <Typography margin={1} sx={{color: '#fec934'}} fontFamily={'monospace'} >Medium</Typography>
             </IconButton>
             </Grid>
         </CardContent>
