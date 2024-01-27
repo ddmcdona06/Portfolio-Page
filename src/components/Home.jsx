@@ -4,13 +4,11 @@ import logo3 from '../img/cropped port.png'
 import ButtonGroup from '@mui/material-next/ButtonGroup';
 import IconButton from '@mui/material/IconButton';
 import AutoStoriesOutlinedIcon from '@mui/icons-material/AutoStoriesOutlined';
-import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
 import EngineeringOutlinedIcon from '@mui/icons-material/EngineeringOutlined';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Tooltip from '@mui/material/Tooltip';
-
-
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 
 
 function Home() {
@@ -41,9 +39,9 @@ function Home() {
             </Tooltip>
           </Stack>
           <Stack justifyContent="center" alignItems="center" spacing={-2}>
-            <Tooltip title='Contact Me' >
-              <IconButton size="large" >
-                <ConnectWithoutContactIcon fontSize="large" sx={{color: '#fec934'}} />
+            <Tooltip title='darryldmcdonald@gmail.com' >
+              <IconButton size="large" href='mailto:darryldmcdonald@gmail.com' target="_blank">
+                <EmailOutlinedIcon fontSize="large" sx={{color: '#fec934'}} />
               </IconButton>
             </Tooltip>
           </Stack>

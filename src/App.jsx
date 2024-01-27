@@ -1,6 +1,7 @@
 import './App.css';
 import Home from './components/Home';
 import MyStory from './components/MyStory';
+import Contact from './components/Contact'
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 export default function App() {
@@ -9,7 +10,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/MyStory" element={<MyStory/>} />
-          <Route path="/users"/>
+          <Route path="/Contact" element={<Contact/>} />
         </Routes>
     </BrowserRouter>
   );

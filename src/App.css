@@ -65,3 +65,14 @@ body {
   0% { opacity: 0; transform: scale(0.1); }
   100% { opacity: 1; transform: scale(1); }
 }
+.email-card {
+  background-image: url('./img/escheresque-dark.png');
+  background-color: #fec934;
+}
+
+.linked:hover {
+  background: #fec934;
+  -moz-box-shadow: 0 0 5px #fec934;
+  -webkit-box-shadow: 0 0 5px #fec934;
+  box-shadow: 0px 0px 5px #fec934;
+}
