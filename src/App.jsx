@@ -1,19 +1,16 @@
 import './App.css';
 import Home from './components/Home';
-import logo3 from './img/cropped port.png'
-import PortDrawer from './components/Drawer';
+import MyStory from './components/MyStory';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 
-
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Home/>
-        <img src={logo3} className="App-logo" alt="logo" />
-        <PortDrawer/>
-      </header>
-    </div>
+    <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/MyStory" element={<MyStory/>} />
+          <Route path="/users"/>
+        </Routes>
+    </BrowserRouter>
   );
 }
-
-export default App;
