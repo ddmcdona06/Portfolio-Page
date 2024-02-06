@@ -33,7 +33,7 @@ function Home() {
             </Stack>
           <Stack justifyContent="center" alignItems="center" spacing={-2}>
             <Tooltip title='Projects' >
-              <IconButton size="large" >
+              <IconButton size="large" href="/Projects">
                 <EngineeringOutlinedIcon fontSize="large" sx={{color: '#fec934'}} />
               </IconButton>
             </Tooltip>

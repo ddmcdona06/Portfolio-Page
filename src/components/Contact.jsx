@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Box from '@mui/material/Box';
@@ -16,6 +16,30 @@ import HouseOutlinedIcon from '@mui/icons-material/HouseOutlined';
 import EmailIcon from '@mui/icons-material/Email';
 
 function Contact() {
+
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = () => {
+    // Send this data to a server using AJAX or other methods
+
+    // Clear the form fields
+    setFormData({
+      name: '',
+      email: '',
+      message: ''
+    });
+  };
 
 
   return(
