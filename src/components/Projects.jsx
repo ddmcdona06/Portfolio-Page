@@ -17,8 +17,11 @@ import Divider from '@mui/material/Divider';
 import story from '../img/StoryTime.png'
 import ButtonBase from '@mui/material/ButtonBase';
 import resolute from '../img/reso.png'
+import ArticleOutlinedIcon from '@mui/icons-material/ArticleOutlined';
 
 function Projects() {
+
+
   return (
     <Box
       margin={5}
@@ -136,6 +139,13 @@ function Projects() {
                   fontSize="large"
                   sx={{ color: "#fec934" }}
                 />
+              </IconButton>
+            </Tooltip>
+          </Stack>
+          <Stack justifyContent="center" alignItems="center" spacing={-2}>
+            <Tooltip title='Resume' >
+              <IconButton size="large" href="/Resume">
+                <ArticleOutlinedIcon fontSize="large" sx={{color: '#fec934'}} />
               </IconButton>
             </Tooltip>
           </Stack>

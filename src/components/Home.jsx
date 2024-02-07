@@ -9,6 +9,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Tooltip from '@mui/material/Tooltip';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import ArticleOutlinedIcon from '@mui/icons-material/ArticleOutlined';
 
 
 function Home() {
@@ -19,9 +20,9 @@ function Home() {
     <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', height: '600px'}}>
       <Stack spacing={0.5} sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
         <Typography variant='h2' className="home-name">Darryl McDonald</Typography>
-        <Typography variant="subtitle2" sx={{color: 'white'}} >FullStack Developer</Typography>
+        <Typography variant="h6" sx={{color: 'white'}} >FullStack Developer</Typography>
       </Stack>
-        <img src={logo3} className="App-logo" alt="logo"/>
+        <img src={logo3} className="App-logo" alt=""/>
         <Stack justifyContent="center" alignItems="center" >
           <ButtonGroup size="medium" variant="text">
             <Stack justifyContent="center" alignItems="center" spacing={-2}>
@@ -35,6 +36,13 @@ function Home() {
             <Tooltip title='Projects' >
               <IconButton size="large" href="/Projects">
                 <EngineeringOutlinedIcon fontSize="large" sx={{color: '#fec934'}} />
+              </IconButton>
+            </Tooltip>
+          </Stack>
+          <Stack justifyContent="center" alignItems="center" spacing={-2}>
+            <Tooltip title='Resume' >
+              <IconButton size="large" href="/Resume">
+                <ArticleOutlinedIcon fontSize="large" sx={{color: '#fec934'}} />
               </IconButton>
             </Tooltip>
           </Stack>

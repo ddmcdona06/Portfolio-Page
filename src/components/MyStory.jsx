@@ -16,6 +16,7 @@ import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import linked from '../img/linkedin_black_logo.png'
 import git from '../img/github.png'
 import med from '../img/medium.png'
+import ArticleOutlinedIcon from '@mui/icons-material/ArticleOutlined';
 
 
 function MyStory() {
@@ -61,6 +62,13 @@ function MyStory() {
             <Tooltip title='Projects' >
               <IconButton size="large" href="/Projects">
                 <EngineeringOutlinedIcon fontSize="large" sx={{color: '#fec934'}} />
+              </IconButton>
+            </Tooltip>
+          </Stack>
+          <Stack justifyContent="center" alignItems="center" spacing={-2}>
+            <Tooltip title='Resume' >
+              <IconButton size="large" href="/Resume">
+                <ArticleOutlinedIcon fontSize="large" sx={{color: '#fec934'}} />
               </IconButton>
             </Tooltip>
           </Stack>
