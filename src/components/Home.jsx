@@ -18,10 +18,10 @@ function Home() {
   return (
     <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', height: '600px'}}>
       <Stack spacing={0.5} sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-        <h1 className="home-name">Darryl McDonald</h1>
+        <Typography variant='h2' className="home-name">Darryl McDonald</Typography>
         <Typography variant="subtitle2" sx={{color: 'white'}} >FullStack Developer</Typography>
       </Stack>
-        <img src={logo3} className="App-logo" alt="logo" />
+        <img src={logo3} className="App-logo" alt="logo"/>
         <Stack justifyContent="center" alignItems="center" >
           <ButtonGroup size="medium" variant="text">
             <Stack justifyContent="center" alignItems="center" spacing={-2}>

@@ -76,3 +76,7 @@ body {
   -webkit-box-shadow: 0 0 5px #fec934;
   box-shadow: 0px 0px 5px #fec934;
 }
+
+.scv-card:hover {
+  opacity: .9;
+}
