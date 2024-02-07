@@ -13,6 +13,9 @@ import EngineeringOutlinedIcon from '@mui/icons-material/EngineeringOutlined';
 import Tooltip from '@mui/material/Tooltip';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import HouseOutlinedIcon from "@mui/icons-material/HouseOutlined";
+import resumePdf from '../resume1.pdf'
+import ButtonBase from '@mui/material/ButtonBase';
+import adobe from '../img/pdf.png'
 
 function Resume() {
   return (
@@ -51,7 +54,7 @@ function Resume() {
           }}
         >
           <Grid direction="row">
-            <Typography variant="h3" sx={{ color: "beige" }}>
+            <Typography variant="h3" sx={{ color: "beige" }} fontFamily={"cursive"}>
               Darryl McDonald{" "}
               {<img alt="" className="resume-logo" src={logo3} width="45px" height="auto" />}
             </Typography>
@@ -156,7 +159,7 @@ function Resume() {
             | Routing | API’s | Axios | CSS | Debugging | Team Leadership | Problem Solving
           </Typography>
           <Typography variant="subtitle1" sx={{ color: "#61dafb" }}>
-            Other:
+            Additional:
           </Typography>
           <Typography variant="body2" sx={{ color: "beige" }}>
             Typescript | Bootstrap | TypeORM | Sequelize.js | AWS EC2 | MongoDB
@@ -221,6 +224,10 @@ function Resume() {
             | Race Day Volunteer
             | Event Team Leadership
           </Typography>
+          <ButtonBase href={resumePdf} target="_blank" rel="noreferrer" sx={{color: '#fec934'}} >
+            <img alt="" src={adobe} width='50px' height='auto'/>
+            Download PDF
+          </ButtonBase>
         </Card>
         <Stack justifyContent="center" alignItems="center" >
           <ButtonGroup size="medium" variant="text">
