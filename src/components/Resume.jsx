@@ -53,7 +53,7 @@ function Resume() {
             padding: "15px",
           }}
         >
-          <Grid direction="row">
+          <Grid direction="row" container>
             <Typography variant="h3" sx={{ color: "beige" }} fontFamily={"cursive"}>
               Darryl McDonald{" "}
               {<img alt="" className="resume-logo" src={logo3} width="45px" height="auto" />}
