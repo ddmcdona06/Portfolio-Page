@@ -16,8 +16,11 @@ import HouseOutlinedIcon from "@mui/icons-material/HouseOutlined";
 import resumePdf from '../resume1.pdf'
 import ButtonBase from '@mui/material/ButtonBase';
 import adobe from '../img/pdf.png'
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
 
 function Resume() {
+  
   return (
     <Box
       justifyContent="center"
@@ -91,17 +94,17 @@ function Resume() {
             Help Desk Technician
           </Typography>
           <Typography variant="body2" sx={{ color: "beige", marginBottom:'40px' }}>
-            <ul>
-              <li>
+            <List sx={{listStyleType: 'disc', listStylePosition: 'inside' }} >
+              <ListItem sx={{display: 'list-item' }} >
                 Provide technical support to bootcamp participants, assisting with programming concepts, debugging, and troubleshooting issues related to software development projects.
-              </li>
-              <li>
+                </ListItem>
+              <ListItem sx={{display: 'list-item' }} >
               Respond to helpdesk tickets promptly, addressing software and coding challenges bootcamp participants face, and ensuring a positive and productive experience.
-              </li>
-              <li>
+              </ListItem>
+              <ListItem sx={{display: 'list-item' }} >
               Stay updated on industry trends, programming languages, and development tools to provide relevant and up-to-date support to bootcamp participants.
-              </li>
-            </ul>
+              </ListItem>
+            </List>
           </Typography>
 
           <Typography variant="subtitle1" sx={{ color: "#61dafb" }}>
@@ -114,35 +117,35 @@ function Resume() {
             Principal Coordinator
           </Typography>
           <Typography variant="body2" sx={{ color: "beige" }}>
-            <ul>
-              <li>
+            <List sx={{listStyleType: 'disc', listStylePosition: 'inside' }} >
+              <ListItem sx={{display: 'list-item' }} >
               Leveraged advanced data analysis techniques and auditing tools to identify irregularities, trends, and potential risks, proactively mitigating issues before they impacted financial operations.
-              </li>
-              <li>
+              </ListItem>
+              <ListItem sx={{display: 'list-item' }} >
               Demonstrated a systematic approach to error analysis, efficiently pinpointing root causes and implementing corrective measures, causing a 70% reduction in error rate.
-              </li>
-              <li>
+              </ListItem>
+              <ListItem sx={{display: 'list-item' }} >
               Played a pivotal role in safeguarding sensitive healthcare data by ensuring accurate and HIPAA-compliant information entry and promoting data integrity and privacy.
-              </li>
-              <li>
+              </ListItem>
+              <ListItem sx={{display: 'list-item' }} >
               Successfully identified bottlenecks and inefficiencies in the existing sorting workflow, leading to a comprehensive overhaul and a 25% reduction in processing time.
-              </li>
-              <li>
+              </ListItem>
+              <ListItem sx={{display: 'list-item' }} >
               Supervised and motivated the team to provide top-notch service to 300+ clients, consistently exceeding their expectations.
-              </li>
-              <li>
+              </ListItem>
+              <ListItem sx={{display: 'list-item' }} >
               Managed and monitored daily operations, ensuring the security and accuracy of financial transactions, resulting in an average daily deposit totaling $9 million.
-              </li>
-              <li>
+              </ListItem>
+              <ListItem sx={{display: 'list-item' }} >
               Streamlined task assignment processes by strategically matching tasks to associates’ individual strengths and expertise.
-              </li>
-              <li>
+              </ListItem>
+              <ListItem sx={{display: 'list-item' }} >
               Spearheaded and organized a wide range of events, programs, and initiatives aimed at promoting employee engagement, diversity, and professional development in the role of Southern Region Lead for Capital One Associate Engagement Network.
-              </li>
-              <li>
+              </ListItem>
+              <ListItem sx={{display: 'list-item' }} >
               Effectively facilitated hands-on training sessions, ensuring a deep understanding of operational software functionalities and proficient equipment operation.
-              </li>
-            </ul>
+              </ListItem>
+            </List>
           </Typography>
           <Divider
             sx={{ bgcolor: "#fec934", marginBottom: "20px", marginTop: "20px" }}
@@ -181,11 +184,11 @@ function Resume() {
             sx={{ color: "beige" }}
           >
             Advanced Software Engineering Immersive Program
-          <ul>
-            <li>IBC Fundamentals of Javascript Level III</li>
-            <li>IBC Functional Programming Level III</li>
-            <li>IBC Web Development Level III</li>
-          </ul>
+            <List sx={{listStyleType: 'disc', listStylePosition: 'inside', color: "beige" }} >
+              <ListItem sx={{display: 'list-item' }} >IBC Fundamentals of Javascript Level III</ListItem>
+              <ListItem sx={{display: 'list-item' }} >IBC Functional Programming Level III</ListItem>
+              <ListItem sx={{display: 'list-item' }} >IBC Web Development Level III</ListItem>
+          </List>
           </Typography>
           <Typography variant="subtitle1" sx={{ color: "#61dafb" }}>
             Loyola University New Orleans
@@ -226,7 +229,7 @@ function Resume() {
           </Typography>
           <ButtonBase href={resumePdf} target="_blank" rel="noreferrer" sx={{color: '#fec934'}} >
             <img alt="" src={adobe} width='50px' height='auto'/>
-            Download PDF
+            Download Resume
           </ButtonBase>
         </Card>
         <Stack justifyContent="center" alignItems="center" >
