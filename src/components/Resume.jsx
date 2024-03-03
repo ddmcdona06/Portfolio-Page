@@ -20,7 +20,7 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 
 function Resume() {
-  
+
   return (
     <Box
       justifyContent="center"
@@ -185,8 +185,8 @@ function Resume() {
           >
             Advanced Software Engineering Immersive Program
             <List sx={{listStyleType: 'disc', listStylePosition: 'inside', color: "beige" }} >
-              <ListItem sx={{display: 'list-item' }} >IBC Fundamentals of Javascript Level III</ListItem>
-              <ListItem sx={{display: 'list-item' }} >IBC Functional Programming Level III</ListItem>
+              <ListItem sx={{display: 'list-item' }} >IBC Fundamentals of Javascript Level I</ListItem>
+              <ListItem sx={{display: 'list-item' }} >IBC Functional Programming Level II</ListItem>
               <ListItem sx={{display: 'list-item' }} >IBC Web Development Level III</ListItem>
           </List>
           </Typography>
