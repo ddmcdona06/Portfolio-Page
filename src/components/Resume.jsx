@@ -13,7 +13,7 @@ import EngineeringOutlinedIcon from '@mui/icons-material/EngineeringOutlined';
 import Tooltip from '@mui/material/Tooltip';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import HouseOutlinedIcon from "@mui/icons-material/HouseOutlined";
-import resumePdf from '../resume1.pdf'
+import resumePdf from '../resume2.pdf'
 import ButtonBase from '@mui/material/ButtonBase';
 import adobe from '../img/pdf.png'
 import List from '@mui/material/List';
