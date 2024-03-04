@@ -1,8 +1,8 @@
+require('dotenv').config();
 const express = require('express');
 const path = require('path');
-const dotenv = require('dotenv');
 
-dotenv.config();
+
 const app = express();
 const port = process.env.port || 4000;
 const distPath = path.resolve(__dirname, '..', 'build');
@@ -20,5 +20,5 @@ app.get('*', (req, res) => {
   })
 })
 app.listen(port, () => {
-  console.log(`listening at: http://localhost:${port}`)
+  console.log(`${port}`)
 })
