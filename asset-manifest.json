@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Portfolio-Page/static/css/main.28a43cc1.css",
+    "main.js": "/Portfolio-Page/static/js/main.9424d441.js",
+    "static/js/787.d4aba7ab.chunk.js": "/Portfolio-Page/static/js/787.d4aba7ab.chunk.js",
+    "static/media/profile-nobg.png": "/Portfolio-Page/static/media/profile-nobg.b518cb34f7e7182db1c8.png",
+    "static/media/StoryTime.png": "/Portfolio-Page/static/media/StoryTime.48aaf2364ad4d0566db6.png",
+    "static/media/resume2.pdf": "/Portfolio-Page/static/media/resume2.bef482579caca8f48f30.pdf",
+    "static/media/reso.png": "/Portfolio-Page/static/media/reso.eba961bf97ffabef6d4a.png",
+    "static/media/Scav2.png": "/Portfolio-Page/static/media/Scav2.a47cd87e9460b7c99dbf.png",
+    "static/media/pdf.png": "/Portfolio-Page/static/media/pdf.308eae89aff5fd547b1d.png",
+    "static/media/cropped port.png": "/Portfolio-Page/static/media/cropped port.f40b416893a7a472e37a.png",
+    "static/media/medium.png": "/Portfolio-Page/static/media/medium.f2a9add1a8b38d45d59c.png",
+    "static/media/linkedin_black_logo.png": "/Portfolio-Page/static/media/linkedin_black_logo.9a1a7f8162140e296345.png",
+    "index.html": "/Portfolio-Page/index.html",
+    "main.28a43cc1.css.map": "/Portfolio-Page/static/css/main.28a43cc1.css.map",
+    "main.9424d441.js.map": "/Portfolio-Page/static/js/main.9424d441.js.map",
+    "787.d4aba7ab.chunk.js.map": "/Portfolio-Page/static/js/787.d4aba7ab.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.28a43cc1.css",
+    "static/js/main.9424d441.js"
+  ]
+}
